@@ -1,7 +1,7 @@
 {
 	"name": "thunkifyer",
 	"description": "Turn stuff into thunks",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "CoderPuppy",
 	"repository": "git://github.com/CoderPuppy/thunkifyer.git",
 	"homepage": "https://github.com/CoderPuppy/thunkifyer"
