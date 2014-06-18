@@ -1,7 +1,7 @@
 function thunkifyer(val) {
 	if(Array.isArray(val))
 		return thunkifyObj(val)
-	if({}.toString.call(val) == '[object Object]')
+	if(val != null && val.constructor == Object)
 		return thunkifyObj(val)
 	if(isPromise(val))
 		return thunkifyPromise(val)
@@ -18,7 +18,7 @@ thunkifyer.is = function(val) {
 thunkifyer.can = function(val) {
 	if(Array.isArray(val))
 		return true
-	if({}.toString.call(val) == '[object Object]')
+	if(val != null && val.constructor == Object)
 		return true
 	if(isPromise(val))
 		return true
